@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="x-apple-disable-message-reformatting">
 <meta name="format-detection" content="telephone=no">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
 <title><%= delivery.mailParameters.subject %></title>
 <!--[if mso]>
 <xml>
@@ -97,6 +99,20 @@ vertical-align: top;
 display: none !important; /* Hide mobile image on Outlook desktop */
 }
 
+/*DARKMODE*/
+@media (prefers-color-scheme: dark) {
+
+  .save-banner {
+    background-color: #4b3a57 !important;
+  }
+
+  .save-text {
+    color: #f2e8ff !important;
+  }
+
+}
+/*DARKMODE*/
+	
 @media only screen and (max-width: 730px) {
 .wrapper img {
 max-width: 100%;
@@ -680,7 +696,7 @@ display: block!important;
 <td  style="line-height:1px; font-size:1px; padding-top:34px;">&nbsp;</td>
 </tr>
 <tr>
-<td class="px-sm-20 fz-24" style="font-family: 'Ambit', Arial, sans-serif; font-size: 24px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:700; padding-top: 0px; mso-hyphenate: none; padding-left: 30px; padding-right: 30px; padding-bottom: 0px; text-transform: uppercase;">Explore Croatia and the Adriatic </td>
+<td class="px-sm-20 fz-24" style="font-family: 'Ambit', Arial, sans-serif; font-size: 24px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:700; padding-top: 0px; mso-hyphenate: none; padding-left: 30px; padding-right: 30px; padding-bottom: 0px; text-transform: uppercase;">Explore Croatia and the&nbsp;Adriatic </td>
 	</tr>
 	
 <tr>
@@ -688,7 +704,7 @@ display: block!important;
 
 </tr>
 <tr>
-<td class="px-sm-20 fz-22" style="font-family: 'Ambit', Arial, sans-serif; font-size: 22px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:400; padding-top: 0px; mso-hyphenate: none; padding-left:90px; padding-right: 90px; padding-bottom: 0px; text-transform: uppercase;">on an exclusive small-ship cruise </td>
+<td class="px-sm-20 fz-22" style="font-family: 'Ambit', Arial, sans-serif; font-size: 22px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:400; padding-top: 0px; mso-hyphenate: none; padding-left:90px; padding-right: 90px; padding-bottom: 0px; text-transform: uppercase;">on an exclusive small-ship&nbsp;cruise </td>
 </tr>
 	
 <tr>
@@ -759,12 +775,12 @@ If a busy tour or far-away adventure is not for you, an Adriatic small-ship crui
 <!-- POD1 -->
 <td valign="top" class="displayBlock fullWidth" width="270" align="center"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
 <tr>
-<td bgcolor="#d6c0dc" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<td   class="save-banner" bgcolor="#d6c0dc" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><table bgcolor="#d6c0dc" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-top-left-radius: 10px; border-top-right-radius: 10px;">
 <tr>
-<td  align="left" style="padding: 14px 20px 14px 0px;  padding-left: 20px;"  ><table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<td  align="left" style="padding: 14px 20px 14px 0px;  padding-left: 20px;"  ><table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse; background-color:#d6c0dc;" >
 <tr>
 
-<td style="padding-left: 8px; padding-right: 30px; vertical-align: middle; color: #1e3282; font-size: 18px; font-weight: 700; line-height:1.4em;">SAVE 15%<sup style="line-height: 0; font-weight: 400;">#</sup></td>
+<td class="save-text" style="padding-left: 8px; padding-right: 30px; vertical-align: middle; color: #1e3282; font-size: 18px; font-weight: 700; line-height:1.4em;">SAVE 15%<sup style="line-height: 0; font-weight: 400; ">#</sup></td>
 </tr>
 </table></td>
 </tr>
@@ -887,7 +903,7 @@ If a busy tour or far-away adventure is not for you, an Adriatic small-ship crui
 <tr>
 <th align="center" style="font-size:1px; line-height: 1px; vertical-align:top;"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/holidays/holiday-types/escorted-tours/small-ship-cruising?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/6eb62cef3216be021a4ba01a5fcce7684c6a62a35916c11b3d0a98514fbd7bd0.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
+<td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/holidays/holiday-types/escorted-tours/small-ship-cruising?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/3cd1128bdeacc788c6940e4bd4c054e7e332219cdb838acefd642e54ff6bdf53.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
 </tr>
 </table></th>
 </tr>
@@ -1056,7 +1072,7 @@ If a busy tour or far-away adventure is not for you, an Adriatic small-ship crui
 <tr>
 <th align="center" style="font-size:1px; line-height: 1px; vertical-align:top;"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/holidays/holiday-types/escorted-tours/small-ship-cruising?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/2e36c34282a2df90fe62f2768dda34b3925a4d84503c205523e7c49fb1d6be8d.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
+<td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/holidays/holiday-types/escorted-tours/small-ship-cruising?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/0397a1f7868264e3b061e9cba80ae8ed1cb3c961e0bbc32318c2eecdf6e79b87.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
 </tr>
 </table></th>
 </tr>
