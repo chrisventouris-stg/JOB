@@ -615,7 +615,7 @@ width:100% !important;
 </tr>
 </table>
 </td>
-<td align="center" class="displayBlock fullWidth align-sm-center bnr-br-top" bgcolor="#E0F1F1">
+<td align="center" class="displayBlock fullWidth align-sm-center" bgcolor="#E0F1F1">
 <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr>
 
@@ -634,30 +634,36 @@ width:100% !important;
 </table></td>
 </tr>
 <tr>
-<td class="pt-sm-0" style="line-height:1px; font-size:1px; padding-top:30px;"></td>
+<td  style="line-height:1px; font-size:1px; padding-top:30px;"></td>
 </tr>
 </table>
 <!--LOGO_NAV_V2-->
-
-<!-- HERO -->
-<table class="full-width-sm" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse; ">
+<!-- BROCHURE BANNER -->
+<table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="full-width-sm" >
 <tr>
-<td  align="center"><table cellpadding="0" cellspacing="0" role="presentation" bgcolor="" width="100%" style="border-collapse: collapse;">
-<tr>
-<td  align="center"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
-<tr>
-<th align="center" style="font-size:1px; line-height: 1px; vertical-align:top;"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
-<tr>
-<td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/offers/flash-sale?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8f74c5a2a5fb1b3fd384d6255f351758a9e1e948ef6cf39476831b35fb0a0457.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></a></td>
-</tr>
-</table></th>
-</tr>
-</table></td>
-</tr>
-</table></td>
+<!--[if !mso]><!-->
+<td>
+<!-- Desktop Image -->
+<a href="https://holiday.saga.co.uk/offers/flash-sale?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|STAYS_OFFER_BNR" target="_blank" _label="STAYS_OFFER_BNR">
+<img class="desktop-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8f74c5a2a5fb1b3fd384d6255f351758a9e1e948ef6cf39476831b35fb0a0457.jpg" alt="Italian Rivieras to Music Maestros. Discover amazing holidays on our doorstep." border="0" style="border-radius: 10px; display: block;">
+</a>
+<!-- Mobile Image -->
+<a href="https://holiday.saga.co.uk/offers/flash-sale?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|STAYS_OFFER_BNR" target="_blank" _label="STAYS_OFFER_BNR">
+<img class="mobile-image" align="center" width="100%" height="100%"  src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/4a5b966e827124f66fb5105baaa93ff8c656c80f203f57023f700c2d2b6f9a34.jpg" alt="Italian Rivieras to Music Maestros. Discover amazing holidays on our doorstep." border="0" style="border-radius: 10px; display: none;">
+</a>
+</td>
+<!--<![endif]-->
+<!--[if mso]>
+<td>
+<a href="https://holiday.saga.co.uk/offers/flash-sale?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|STAYS_OFFER_BNR" target="_blank" _label="STAYS_OFFER_BNR">
+<img class="bnr-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8f74c5a2a5fb1b3fd384d6255f351758a9e1e948ef6cf39476831b35fb0a0457.jpg" alt="Italian Rivieras to Music Maestros. Discover amazing holidays on our doorstep." border="0" class="fullWidth heightAuto" style="border-radius: 10px;">
+</a>
+</td>
+<![endif]-->
 </tr>
 </table>
-<!-- HERO --> 
+<!-- BROCHURE BANNER -->
+
 
 <!--  TITLE INTRO	-->
 <table class="full-width-sm" align="center" cellpadding="0" cellspacing="0" role="presentation" width="600" bgcolor="#FFFFFF"  style="border-collapse: collapse; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; ">
@@ -710,10 +716,10 @@ Why choose a shorter Europe tour?
 <tr>
 <td style="padding-bottom: 20px;">
 <ul style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:17px; margin: 0px;">
-<li style="padding-bottom: 4px;">Ideal for a short break  </li>	
-<li style="padding-bottom: 4px;">Just a few hours door to door</li>	
-<li style="padding-bottom: 4px;">Less time travelling means more quality time</li>	
-<li style="padding-bottom: 4px;">Travel lighter – less packing and less luggage!</li>	
+<li style="padding-bottom: 4px; padding-right: 12px;">Ideal for a short break  </li>	
+<li style="padding-bottom: 4px; padding-right: 12px;">Just a few hours door to door</li>	
+<li style="padding-bottom: 4px; padding-right: 12px;">Less time travelling means more quality time</li>	
+<li style="padding-bottom: 4px; padding-right: 12px;">Travel lighter – less packing and less luggage!</li>	
 <li>Great choice, from quiet islands to historic cities</li>	
 </ul>	
 </td>
@@ -735,7 +741,7 @@ Why choose a shorter Europe tour?
 <!-- SPACER Start -->
 <table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:44px;">&nbsp;</td>
 </tr>
 </table>
 <!-- SPACER END --> 
@@ -761,7 +767,7 @@ Why choose a shorter Europe tour?
 <!-- SPACER Start -->
 <table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:36px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:34px;">&nbsp;</td>
 </tr>
 </table>
 <!-- SPACER END -->
@@ -770,7 +776,7 @@ Why choose a shorter Europe tour?
 <tr>
 <td><table class="fullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse; ">
 <tr>
-<td class="px-sm-20 fz-24" style="font-family: 'Ambit', Arial, sans-serif; font-size: 24px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:400; padding-top: 0px; mso-hyphenate: none; padding-left: 0px; padding-right: 20px; padding-bottom: 0px;">Recommended 2026 short breaks </td>
+<td class="px-sm-20 fz-24" style="font-family: 'Ambit', Arial, sans-serif; font-size: 24px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:400; padding-top: 0px; mso-hyphenate: none; padding-left: 0px; padding-right: 20px; padding-bottom: 0px;">Recommended 2026 short&nbsp;breaks </td>
 </tr>
 
 </table></td>
@@ -780,7 +786,7 @@ Why choose a shorter Europe tour?
 <!-- SPACER Start -->
 <table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:34px;">&nbsp;</td>
 </tr>
 </table>
 <!-- SPACER END --> 
@@ -792,7 +798,7 @@ Why choose a shorter Europe tour?
 <table width="100%" class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px 10px 0px 0px;" align="center" bgcolor="#EAF6F6" >
 <tr>
 <td width="5%">&nbsp;</td>
-<td width="95%" class="heightAuto fz-18"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:18px; font-weight:bold; text-align: left; color:#1e3282; padding-top:20px; padding-bottom:20px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; " >S&zwj;A&zwj;V&zwj;E 1&zwj;0% on all departures up until December&nbsp;2026<sup style="font-weight: 400; line-height: 0;">#</sup>
+<td width="95%" class="heightAuto fz-18"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:18px; font-weight:bold; text-align: left; color:#1e3282; padding-top:20px; padding-bottom:20px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; " >Save 1&zwj;0% on all departures up until December&nbsp;2026<sup style="font-weight: 400; line-height: 0;">#</sup>
 </td>
 </tr>
 
@@ -883,7 +889,7 @@ Highlights of the Beautiful Amalfi&nbsp;Coast
 </table>
 <!-- SPACER END --> 
 <!--FEATURE POD FIX-->
-<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px" bgcolor="#E0F1F1">
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px" >
 
 
 <!--IMAGE-->
@@ -896,7 +902,7 @@ Highlights of the Beautiful Amalfi&nbsp;Coast
 <table width="100%" class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px 10px 0px 0px;" align="center" bgcolor="#EAF6F6" >
 <tr>
 <td width="5%">&nbsp;</td>
-<td width="95%" class="heightAuto fz-18"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:18px; font-weight:bold; text-align: left; color:#1e3282; padding-top:20px; padding-bottom:20px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; " >S&zwj;A&zwj;V&zwj;E 1&zwj;0% on all departures up until December&nbsp;2026<sup style="font-weight: 400; line-height: 0;">#</sup>
+<td width="95%" class="heightAuto fz-18"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:18px; font-weight:bold; text-align: left; color:#1e3282; padding-top:20px; padding-bottom:20px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; " >Save 1&zwj;0% on all departures up until December&nbsp;2026<sup style="font-weight: 400; line-height: 0;">#</sup>
 </td>
 </tr>
 
@@ -983,7 +989,7 @@ Guernsey Short Break
 </table>
 <!-- SPACER END --> 
 <!--FEATURE POD FIX-->
-<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px" bgcolor="#E0F1F1">
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px" >
 
 <!--OFFER-->
 <tr>
@@ -991,7 +997,7 @@ Guernsey Short Break
 <table width="100%" class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px 10px 0px 0px;" align="center" bgcolor="#EAF6F6" >
 <tr>
 <td width="5%">&nbsp;</td>
-<td width="95%" class="heightAuto fz-18"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:18px; font-weight:bold; text-align: left; color:#1e3282; padding-top:20px; padding-bottom:20px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; " >S&zwj;A&zwj;V&zwj;E 1&zwj;0% on all departures up until December&nbsp;2026<sup style="font-weight: 400; line-height: 0;">#</sup>
+<td width="95%" class="heightAuto fz-18"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:18px; font-weight:bold; text-align: left; color:#1e3282; padding-top:20px; padding-bottom:20px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; " >Save 1&zwj;0% on all departures up until December&nbsp;2026<sup style="font-weight: 400; line-height: 0;">#</sup>
 </td>
 </tr>
 
@@ -1082,7 +1088,7 @@ André Rieu in Prague
 </table>
 <!-- SPACER END --> 
 <!--FEATURE POD FIX-->
-<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px" bgcolor="#E0F1F1">
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px" >
 
 <!--OFFER-->
 <tr>
@@ -1090,7 +1096,7 @@ André Rieu in Prague
 <table width="100%" class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px 10px 0px 0px;" align="center" bgcolor="#EAF6F6" >
 <tr>
 <td width="5%">&nbsp;</td>
-<td width="95%" class="heightAuto fz-18"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:18px; font-weight:bold; text-align: left; color:#1e3282; padding-top:20px; padding-bottom:20px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; " >S&zwj;A&zwj;V&zwj;E 1&zwj;0% on all departures up until December&nbsp;2026<sup style="font-weight: 400; line-height: 0;">#</sup>
+<td width="95%" class="heightAuto fz-18"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:18px; font-weight:bold; text-align: left; color:#1e3282; padding-top:20px; padding-bottom:20px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; " >Save 1&zwj;0% on all departures up until December&nbsp;2026<sup style="font-weight: 400; line-height: 0;">#</sup>
 </td>
 </tr>
 
@@ -1181,7 +1187,7 @@ Scenic Lake Orta
 </table>
 <!-- SPACER END --> 
 <!--FEATURE POD FIX-->
-<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px" bgcolor="#E0F1F1">
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px" >
 
 <!--OFFER-->
 <tr>
@@ -1189,7 +1195,7 @@ Scenic Lake Orta
 <table width="100%" class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px 10px 0px 0px;" align="center" bgcolor="#EAF6F6" >
 <tr>
 <td width="5%">&nbsp;</td>
-<td width="95%" class="heightAuto fz-18"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:18px; font-weight:bold; text-align: left; color:#1e3282; padding-top:20px; padding-bottom:20px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; " >S&zwj;A&zwj;V&zwj;E 1&zwj;0% on all departures up until December&nbsp;2026<sup style="font-weight: 400; line-height: 0;">#</sup>
+<td width="95%" class="heightAuto fz-18"   align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:18px; font-weight:bold; text-align: left; color:#1e3282; padding-top:20px; padding-bottom:20px; padding-left: 0px; padding-right: 0px; vertical-align: top; mso-hyphenate:none; " >Save 1&zwj;0% on all departures up until December&nbsp;2026<sup style="font-weight: 400; line-height: 0;">#</sup>
 </td>
 </tr>
 
@@ -1288,18 +1294,50 @@ Taste of the Douro Valley
 <td>
 <!-- Desktop Image -->
 <a href="https://holiday.saga.co.uk/offers/hotel-stays?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|STAYS_OFFER_BNR" target="_blank" _label="STAYS_OFFER_BNR">
-<img class="desktop-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/2c27e8700cb504d14779a3037ba73746b2503f200e15bbf134685eac44c05755.jpg" alt="SAVE 10% ON ALL HOTEL STAYS. FOR A LIMITED TIME ONLY" border="0" style="border-radius: 10px; display: block;">
+<img class="desktop-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/86bf2051c7194ab3e36bf843fdf874dea85d73995871040d02ec1e2d0117ec99.jpg" alt="SAVE 10% ON ALL HOLIDAYS. FOR A LIMITED TIME ONLY" border="0" style="border-radius: 10px; display: block;">
 </a>
 <!-- Mobile Image -->
 <a href="https://holiday.saga.co.uk/offers/hotel-stays?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|STAYS_OFFER_BNR" target="_blank" _label="STAYS_OFFER_BNR">
-<img class="mobile-image" align="center" width="100%" height="100%"  src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8ef0c8207215384db2b67e6cc78aa5c3fb940119e121c60ec78f0778ca390991.jpg" alt="SAVE 10% ON ALL HOTEL STAYS. FOR A LIMITED TIME ONLY" border="0" style="border-radius: 10px; display: none;">
+<img class="mobile-image" align="center" width="100%" height="100%"  src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/62ac762bb844bf758dab4ebb6362335adb7f88ac2b49778d33add8e55d0ae7ab.jpg" alt="SAVE 10% ON ALL HOLIDAYS. FOR A LIMITED TIME ONLY" border="0" style="border-radius: 10px; display: none;">
 </a>
 </td>
 <!--<![endif]-->
 <!--[if mso]>
 <td>
 <a href="https://holiday.saga.co.uk/offers/hotel-stays?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|STAYS_OFFER_BNR" target="_blank" _label="STAYS_OFFER_BNR">
-<img class="bnr-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/2c27e8700cb504d14779a3037ba73746b2503f200e15bbf134685eac44c05755.jpg" alt="SAVE 10% ON ALL HOTEL STAYS. FOR A LIMITED TIME ONLY" border="0" class="fullWidth heightAuto" style="border-radius: 10px;">
+<img class="bnr-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/86bf2051c7194ab3e36bf843fdf874dea85d73995871040d02ec1e2d0117ec99.jpg" alt="SAVE 10% ON ALL HOLIDAYS. FOR A LIMITED TIME ONLY" border="0" class="fullWidth heightAuto" style="border-radius: 10px;">
+</a>
+</td>
+<![endif]-->
+</tr>
+</table>
+<!-- BROCHURE BANNER -->
+<!-- SPACER Start -->
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
+</table>
+<!-- SPACER END --> 	
+<!-- BROCHURE BANNER -->
+<table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="full-width-sm" >
+<tr>
+<!--[if !mso]><!-->
+<td>
+<!-- Desktop Image -->
+<a href="https://holiday.saga.co.uk/offers/hotel-stays?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|STAYS_OFFER_BNR" target="_blank" _label="STAYS_OFFER_BNR">
+<img class="desktop-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/0d13a5950751127748126ad6a7fecf86f094a9a57a950807a2e0656ad1d87fc6.jpg" alt="SAVE 10% ON ALL HOLIDAYS. FOR A LIMITED TIME ONLY" border="0" style="border-radius: 10px; display: block;">
+</a>
+<!-- Mobile Image -->
+<a href="https://holiday.saga.co.uk/offers/hotel-stays?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|STAYS_OFFER_BNR" target="_blank" _label="STAYS_OFFER_BNR">
+<img class="mobile-image" align="center" width="100%" height="100%"  src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/f6c9bd9dea7c82d461a0b8e361a280efc744ea7c679c73822626a090c60e580b.jpg" alt="SAVE 10% ON ALL HOLIDAYS. FOR A LIMITED TIME ONLY" border="0" style="border-radius: 10px; display: none;">
+</a>
+</td>
+<!--<![endif]-->
+<!--[if mso]>
+<td>
+<a href="https://holiday.saga.co.uk/offers/hotel-stays?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|STAYS_OFFER_BNR" target="_blank" _label="STAYS_OFFER_BNR">
+<img class="bnr-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/86bf2051c7194ab3e36bf843fdf874dea85d73995871040d02ec1e2d0117ec99.jpg" alt="SAVE 10% ON ALL HOLIDAYS. FOR A LIMITED TIME ONLY" border="0" class="fullWidth heightAuto" style="border-radius: 10px;">
 </a>
 </td>
 <![endif]-->
@@ -1418,7 +1456,7 @@ Taste of the Douro Valley
 <table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;" align="center">
 
 <tr>
-<td align="center"><table class="fullWidth" cellpadding="0" cellspacing="0" bgcolor="#d6ecea" role="presentation" width="600" style="border-collapse: collapse; border-radius: 0px;">
+<td align="center"><table class="fullWidth" cellpadding="0" cellspacing="0" bgcolor="#EAF6F6" role="presentation" width="600" style="border-collapse: collapse; border-radius: 0px;">
 <tr>
 <td align="left" class="px-sm-20"><table cellpadding="0" cellspacing="0" role="presentation" width="100%">
 <tr>
