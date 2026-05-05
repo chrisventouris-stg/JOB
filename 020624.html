@@ -70,6 +70,10 @@ font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto",
 font-family: 'Ambit', Arial, sans-serif!important;
 }
 }
+body, table, td, a {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:100%
+}
 th {
 border-collapse: collapse!important;
 margin: 0 0!important;
@@ -571,7 +575,7 @@ width:100% !important;
 
 <body style="box-sizing:border-box;margin:0;padding:0;width:100%;word-break:break-word;-webkit-font-smoothing:antialiased;">
 <!--[if !mso]><!-->
-<div style="display:none; font-size:0; line-height:0; overflow:hidden; mso-hide:all; max-height: 0px;">Secure your festive hotel stay at top UK destinations</div>
+<div style="display:none; font-size:0; line-height:0; overflow:hidden; mso-hide:all; max-height: 0px;">Save £100pp on selected University holidays</div>
 <!--<![endif]-->
 <table cellspacing="0" cellpadding="0" border="0" width="100%">
 <tr>
@@ -711,8 +715,8 @@ Explore fine Roman ruins, glorious gardens and the colourful charm of nearby Wes
 <td  style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
 </tr>
 <tr>
-<td class="fz-17 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:normal; padding-top: 0px; mso-hyphenate: none; padding-left:60px; padding-right: 60px; padding-bottom: 0px;"> 
-Hurry! Last dates available: 9, 16 and 24 August 2026. Book&nbsp;now on&nbsp;<a class="fz-17" href="tel:08082232729" style="font-family: 'Ambit', Arial, sans-serif; color: #1e3282; font-size: 17px; line-height: 1.5em; ">0&zwj;8&zwj;0&zwj;8&nbsp;2&zwj;2&zwj;3&nbsp;2&zwj;7&zwj;2&zwj;9</a>.
+<td class="fz-17 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:normal; padding-top: 0px; mso-hyphenate: none; padding-left:20px; padding-right: 20px; padding-bottom: 0px;"> 
+Hurry! Limited spaces remaining. Book&nbsp;now on&nbsp;<a class="fz-17" href="tel:08082232729" style="font-family: 'Ambit', Arial, sans-serif; color: #1e3282; font-size: 17px; line-height: 1.5em; ">0&zwj;8&zwj;0&zwj;8&nbsp;2&zwj;2&zwj;3&nbsp;2&zwj;7&zwj;2&zwj;9</a>.
 </td>
 </tr>
 
@@ -900,7 +904,71 @@ Hurry! Last dates available: 9, 16 and 24 August 2026. Book&nbsp;now on&nbsp;<a 
 <!-- SPACER Start -->
 <table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+</tr>
+</table>
+<!-- SPACER END --> 
+<!-- 25 BANNER -->
+<table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="full-width-sm" >
+<tr>
+<!--[if !mso]><!-->
+<td>
+<!-- Desktop Image -->
+<a href="https://holiday.saga.co.uk/offers/latest-offers?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|OFFER_BNR" target="_blank" _label="OFFER_BNR">
+<img class="desktop-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/6a580355cfc612d4fe35de2c0cc2093771cc320e5af725f8e5d03d39e83e0b48.jpg" alt="SAVE UP T0 25% ON SELECTED TOURS. LIMITED TIME ONLY." border="0" style="border-radius: 10px; display: block;">
+</a>
+<!-- Mobile Image -->
+<a href="https://holiday.saga.co.uk/offers/latest-offers?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|OFFER_BNR" target="_blank" _label="OFFER_BNR">
+<img class="mobile-image" align="center" width="100%" height="100%"  src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/ce7fe15664194ccd73fa53ab6fbb4e83c8e4a837276a81c7d63a7f969b108644.jpg" alt="SAVE UP T0 25% ON SELECTED TOURS. LIMITED TIME ONLY." border="0" style="border-radius: 10px; display: none;">
+</a>
+</td>
+<!--<![endif]-->
+<!--[if mso]>
+<td>
+<a href="https://holiday.saga.co.uk/offers/latest-offers?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|OFFER_BNR" target="_blank" _label="OFFER_BNR">
+<img class="bnr-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/6a580355cfc612d4fe35de2c0cc2093771cc320e5af725f8e5d03d39e83e0b48.jpg" alt="SAVE UP T0 25% ON SELECTED TOURS. LIMITED TIME ONLY." border="0" class="fullWidth heightAuto" style="border-radius: 10px;">
+</a>
+</td>
+<![endif]-->
+</tr>
+</table>
+<!-- 25 BANNER -->	
+<!-- SPACER Start -->
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+</tr>
+</table>
+<!-- SPACER END --> 
+<!-- 15 BANNER -->
+<table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="full-width-sm" >
+<tr>
+<!--[if !mso]><!-->
+<td>
+<!-- Desktop Image -->
+<a href="https://holiday.saga.co.uk/offers?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|OFFER_BNR" target="_blank" _label="OFFER_BNR">
+<img class="desktop-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8bf708d4218448b8cb37616351696dd5775133239698dd8a3e64cbe9a782fd2b.jpg" alt="SAVE UP TO 15% OFF ALL HOLIDAYS. BRAND NEW OFFER FOR A LIMITED TIME ONLY" border="0" style="border-radius: 10px; display: block;">
+</a>
+<!-- Mobile Image -->
+<a href="https://holiday.saga.co.uk/offers?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|OFFER_BNR" target="_blank" _label="OFFER_BNR">
+<img class="mobile-image" align="center" width="100%" height="100%"  src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/173aaffcd596ab04c3aecf261f19f9f1d6dc42b893dceb831f5c2d178aa510dc.jpg" alt="SAVE UP TO 15% OFF ALL HOLIDAYS. BRAND NEW OFFER FOR A LIMITED TIME ONLY" border="0" style="border-radius: 10px; display: none;">
+</a>
+</td>
+<!--<![endif]-->
+<!--[if mso]>
+<td>
+<a href="https://holiday.saga.co.uk/offers?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|OFFER_BNR" target="_blank" _label="OFFER_BNR">
+<img class="bnr-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8bf708d4218448b8cb37616351696dd5775133239698dd8a3e64cbe9a782fd2b.jpg" alt="SAVE UP TO 15% OFF ALL HOLIDAYS. BRAND NEW OFFER FOR A LIMITED TIME ONLY" border="0" class="fullWidth heightAuto" style="border-radius: 10px;">
+</a>
+</td>
+<![endif]-->
+</tr>
+</table>
+<!-- 15 BANNER -->	
+<!-- SPACER Start -->
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
 </tr>
 </table>
 <!-- SPACER END --> 
@@ -1230,6 +1298,11 @@ YOU TO THE WHOLE FAMILY</td>
 <td style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px;">
 * Special offer: Valid on new bookings only, cannot be retrospectively applied. Discount cannot be used in conjunction with any other offer and is for a limited time only. Saga reserves the right to withdraw, extend or reduce offers at any given time.
 <br><br>
+1 Special offer ends Friday 15 May 2026. Valid on new bookings only, cannot be retrospectively applied. Discounts cannot be used in conjunction with any other offer and are for a limited time only. 15% discount available on escorted tours of any duration departing before 31 December 2026.  A 10% discount is available on escorted tours of any duration departing in 2027 and hotel stays of 14 nights or more departing before 31 March 2027. Discount applies to the price excluding insurance, and amounts vary depending on departure dates and durations; please see individual holiday pages for details. For hotel stays, please quote SAVE10 when booking. For tours, the discount is automatically applied, and single, room and flight upgrade supplements apply and are excluded from the discount. Saga reserves the right to withdraw, extend or reduce offers at any given time.
+	
+<br><br>
+2 Special offer: Valid on new bookings only, cannot be retrospectively applied. Discount cannot be used in conjunction with any other offer and is for a limited time only. Discount applies to the price excluding insurance, and amounts vary depending on departure dates and durations; please see individual holiday pages on our website for details. The discount is automatically applied, and single, room and flight upgrade supplements apply and are excluded from the discount. Saga reserves the right to withdraw, extend or reduce offers at any given time. Prices are per person based on two sharing, are subject to availability and correct at the time of send.
+<br><br>
 <%@ include view='TR_Holidays_Marketing_Footer_Wording' %></td>
 </tr>
 <!-- SPACER -->
@@ -1241,7 +1314,7 @@ YOU TO THE WHOLE FAMILY</td>
 <td><table width="100%" class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr>
 <td width="30%" align="left" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;"><%@ include view='TR_Footer_Links_EIE' %></td>
-<td width="30%" align="right" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;"> Ⓒ <%= formatDate(new Date(), "%4Y") %> Saga<br>0&zwj;2&zwj;0&zwj;5&zwj;6&zwj;3 </td>
+<td width="30%" align="right" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;"> Ⓒ <%= formatDate(new Date(), "%4Y") %> Saga<br>0&zwj;2&zwj;0&zwj;6&zwj;2&zwj;4 </td>
 </tr>
 </table></td>
 </tr>
