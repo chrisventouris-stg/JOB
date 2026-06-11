@@ -1728,19 +1728,31 @@ Departs September 2&zwj;0&zwj;2&zwj;6
 </tr>
 </table>
 <!-- SPACER END -->
-<!--BROCHURE REQUEST-->
-<table class="full-width-sm" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse; ">
+<!-- OFFER BANNER -->
+<table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="full-width-sm" >
 <tr>
-<td  align="center">
-<table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
-<tr>
-<td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/brochures?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="https://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/e3613a6354c87a12afb27f024b58235920f7eb871757ad4f79c84a09a41bb831.jpg" alt="" width="600" height="auto"  style="display:block; border-radius: 10px;" ></a></td>
-</tr>
-</table>
+<!--[if !mso]><!-->
+<td>
+<!-- Desktop Image -->
+<a href="https://holiday.saga.co.uk/offers/flash-sale?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|FLASH_SALE_BANNER" target="_blank" _label="FLASH_SALE_BANNER">
+<img class="desktop-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/55be2e70d890f0bdb920c6fc75b238195f4390bba36ea0c966f423fcaca3d9ad.jpg" alt="SAVE UP TO 2,000 GBP PP ON SELECTED TOURS - USE CODE SAVE26. FOR A LIMITED TIME ONLY" border="0" style="border-radius: 10px; display: block;">
+</a>
+<!-- Mobile Image -->
+<a href="https://holiday.saga.co.uk/offers/flash-sale?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|FLASH_SALE_BANNER" target="_blank" _label="FLASH_SALE_BANNER">
+<img class="mobile-image" align="center" width="100%" height="100%"  src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8c1eca25495e47d27613a1518404e4206114158cc8b9f0e9d0570dc3d60962aa.jpg" alt="SAVE UP TO 2,000 GBP PP ON SELECTED TOURS - USE CODE SAVE26. FOR A LIMITED TIME ONLY" border="0" style="border-radius: 10px; display: none;">
+</a>
 </td>
+<!--<![endif]-->
+<!--[if mso]>
+<td>
+<a href="https://holiday.saga.co.uk/offers/flash-sale?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|FLASH_SALE_BANNER" target="_blank" _label="FLASH_SALE_BANNER">
+<img class="bnr-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/55be2e70d890f0bdb920c6fc75b238195f4390bba36ea0c966f423fcaca3d9ad.jpg" alt="SAVE UP TO 2,000 GBP PP ON SELECTED TOURS - USE CODE SAVE26. FOR A LIMITED TIME ONLY" border="0" class="fullWidth heightAuto" style="border-radius: 10px;">
+</a>
+</td>
+<![endif]-->
 </tr>
 </table>
-<!--BROCHURE REQUEST-->
+<!-- OFFER BANNER -->	
 <!-- SPACER Start -->
 <table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
