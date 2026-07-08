@@ -70,6 +70,10 @@ font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto",
 font-family: 'Ambit', Arial, sans-serif!important;
 }
 }
+body, table, td, a {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:100%
+}
 th {
 border-collapse: collapse!important;
 margin: 0 0!important;
@@ -78,8 +82,6 @@ a {
 font-weight: 600;
 text-decoration: underline;
 }
-
-	
 #outlook a {
 padding: 0;
 font-size: inherit;
@@ -96,12 +98,7 @@ line-height: 26px;
 vertical-align: top;
 }
 .mobile-image {
-display: none !important;
-width: 0px !important; 
-height: 0px !important;
-overflow: hidden !important;
-line-height: 0px !important;
-font-size: 0px !important;
+display: none !important; /* Hide mobile image on Outlook desktop */
 }
 
 @media only screen and (max-width: 730px) {
@@ -119,6 +116,12 @@ width: 100%!important;
 display: block!important;
 }
 
+
+
+.color-switch-zig-zag{
+bgcolor: #EAF6F6 !important;
+background-color: #EAF6F6 !important;
+}
 .nav2-width{
 width: 200px !important;
 }
@@ -131,16 +134,29 @@ border-bottom-right-radius: 0px !important;
 .bnr-br-bl{
 border-bottom-left-radius: 10px !important;
 }
+.bnr-br-bl-0{
+border-bottom-left-radius: 0px !important;
+}
 .bnr-br-br{
 border-bottom-right-radius: 10px !important;
+}
+.bnr-br-br-0{
+border-bottom-right-radius: 0px !important;
 }
 
 .bnr-br-tl{
 border-top-left-radius: 10px !important;
 }
+.bnr-br-tl-0{
+border-top-left-radius: 0px !important;
+}
 .bnr-br-tr{
 border-top-right-radius: 10px !important;
 }
+.bnr-br-tr-0{
+border-top-right-radius: 0px !important;
+}
+
 .bnr-br-top{
 border-top-left-radius: 10px !important;
 border-top-right-radius: 10px !important;
@@ -158,23 +174,8 @@ border-top-left-radius: 0px !important;
 border-top-right-radius: 0px !important;
 }
 .desktop-image {
-display: none !important;
-width: 0px !important; 
-height: 0px !important;
-overflow: hidden !important;
-line-height: 0px !important;
-font-size: 0px !important;
+display: none !important; /* Hide desktop image on mobile */
 }
-
-.mobile-hide {
-display: none !important;
-width: 0px !important; 
-height: 0px !important;
-overflow: hidden !important;
-line-height: 0px !important;
-font-size: 0px !important;
-}
-
 .mobile-image {
 display: block !important; /* Show mobile image on mobile */
 width: 100% !important;
@@ -195,8 +196,17 @@ width: 100% !important;
 .innerBlockFullWidth {
 width: 92% !important;
 }
-.overlap {
-width: 93.3% !important;
+.x60 {
+width: 60% !important;
+}
+.x70 {
+width: 70% !important;
+}
+.x80 {
+width: 80% !important;
+}
+.x90 {
+width: 90% !important;
 }
 .mobImgCollage {
 width: 97.5% !important;
@@ -315,8 +325,6 @@ padding: 4px 0!important;
 .spacer {
 height: 0;
 }
-	
-
 .img_full_width {
 width: 100%!important;
 height: auto!important;
@@ -347,6 +355,11 @@ padding-top: 0!important;
 }
 .pt-sm-10 {
 padding-top: 10px!important;
+}
+.pt-sm-16 {
+
+padding-top: 16px!important;
+
 }
 .pt-sm-20 {
 padding-top: 20px!important;
@@ -492,11 +505,11 @@ line-height: 24px !important;
 }
 .fz-22 {
 font-size: 22px !important;
-line-height: 26px !important;
+line-height: 30px !important;
 }
 .fz-24 {
 font-size: 24px !important;
-line-height: 28px !important;
+line-height: 32px !important;
 }
 .fz-26 {
 font-size: 26px !important;
@@ -513,6 +526,9 @@ line-height: 34px !important;
 .hero-heading {
 font-size: 28px !important;
 line-height: 32px !important;
+}
+.flash-fz{
+font-size: 20px !important;
 }
 }
 
@@ -542,19 +558,20 @@ padding-left: 30px!important;
 }
 .hero-heading {
 font-size: 26px !important;
-line-height: 30px !important;
+line-height: 30px !important; 
 }
 
 .displayBlockMob{
 display: block!important;
+width:100% !important;
 }
 }
 </style>
 </head>
- 
+
 <body style="box-sizing:border-box;margin:0;padding:0;width:100%;word-break:break-word;-webkit-font-smoothing:antialiased;">
 <!--[if !mso]><!-->
-<div style="display:none; font-size:0; line-height:0; overflow:hidden; mso-hide:all; max-height: 0px;">Book now and save 10%</div>
+<div style="display:none; font-size:0; line-height:0; overflow:hidden; mso-hide:all; max-height: 0px;">Save up to 15%</div>
 <!--<![endif]-->
 <table cellspacing="0" cellpadding="0" border="0" width="100%">
 <tr>
@@ -586,7 +603,6 @@ display: block!important;
 </table>
 <!--  Pre-header  --> 
 
-
 <!--LOGO_NAV_V2-->
 <table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation"  >
 <!--  SPACER  -->
@@ -603,7 +619,7 @@ display: block!important;
 <td width="100%"  align="center" style="padding-bottom: 8px;"><a href="https://holiday.saga.co.uk/?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|header_logo|image" target="_blank" _label="NAV_SAGA"> <img class="logo" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/306e9910b0c76b1687f2724bd60c58b55ef8fb0305cf6afa9c0f23d778fe98b5.png" alt="SAGA" width="126" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align: center;" > </a></td>
 </tr>
 <tr>
-<td class="fz-16 " style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; color:#1e3282; line-height: 1.2em;  text-align:center; font-weight:400; padding-top: 0px; mso-hyphenate: none; padding-bottom: 0px; text-transform: uppercase;"><a href="tel:08082232729" style="color:#1e3282; text-decoration: none; font-weight:400;">0808&nbsp;223&nbsp;2729</a></td>
+<td class="fz-16 " style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; color:#1e3282; line-height: 1.2em;  text-align:center; font-weight:400; padding-top: 0px; mso-hyphenate: none; padding-bottom: 0px; text-transform: uppercase;"><a href="tel:08082587744" style="color:#1e3282; text-decoration: none; font-weight:400;">0808&nbsp;258&nbsp;7744</a></td>
 </tr>
 </table>
 </td>
@@ -619,12 +635,11 @@ display: block!important;
 <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr>
 
-<td bgcolor="#E0F1F1" class="bnr-br-tl"><table  cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;"><tr><td class="nav-mob nav2-width py-sm-10" width="130" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center; padding: 4px 4px;" ><a href="https://holiday.saga.co.uk/holidays/holiday-types/group-tours/escorted-tours?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|ET" _label="NAV_ET" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400; " >Escorted tours</a></td></tr></table></td>
+<td bgcolor="#E0F1F1"  class="bnr-br-tl"><table  cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;"><tr><td class="nav-mob nav2-width py-sm-10" width="130" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center; padding: 4px 4px;" ><a href="https://holiday.saga.co.uk/holidays/holiday-types/group-tours/escorted-tours?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|ET" _label="NAV_ET" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400; " >Escorted tours</a></td></tr></table></td>
 
 <td bgcolor="#E0F1F1"><table  cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;"><tr><td class="nav-mob nav2-width py-sm-10" width="130" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center; padding: 4px 4px;" bgcolor="#E0F1F1"><a href="https://holiday.saga.co.uk/holidays/holiday-types/hotel?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|HH" _label="NAV_HH" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400;" >Hotel stays</a></td></tr></table></td>
 
-
-<td bgcolor="#E0F1F1" class="bnr-br-tr"><table  cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;"><tr><td class="nav-mob nav2-width py-sm-10" width="130" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center; padding: 4px 4px ;" ><a href="https://holiday.saga.co.uk/offers?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|UNI" _label="OFFERS" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400;" >Offers</a></td></tr></table></td>
+<td bgcolor="#E0F1F1" class="bnr-br-tr"><table  cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;"><tr><td class="nav-mob nav2-width py-sm-10" width="130" style="color: #1e3282; font-family:'Ambit', arial, sans-serif; font-size:16px; line-height:1.2em; font-weight:normal; text-align: center; padding: 4px 4px ;" ><a href="https://travel.saga.co.uk/cruises/river.aspx?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|NAV|RC" _label="NAV_RC" target="_blank" style="text-decoration: none; color: #1e3282;  font-family:'Ambit', arial, sans-serif; font-weight: 400;" >River cruises</a></td></tr></table></td>
 
 
 </tr>
@@ -639,6 +654,7 @@ display: block!important;
 </tr>
 </table>
 <!--LOGO_NAV_V2-->
+
 <!-- GUARANTEE BANNER -->
 <table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="full-width-sm" >
 <tr>
@@ -664,148 +680,121 @@ display: block!important;
 <td  align="center">
 <table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/5608ebc58818b6b21422922a951004d4c05225f10b29ce1cdba48dfce776656c.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; " ></a></td>
+<td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/holidays/europe?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|HERO|IMAGE" target="_blank" _label="HERO"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/30aab8eb7aa236e34de00411ede37d71d6bfb4735e8244a26cd5eddc7e3e0c8b.jpg" alt="" width="600" height="auto"  style="display:block; height:auto; outline:none; border-radius: 0px 0px 10px 10px;" ></a></td>
 </tr>
 </table>
 </td>
 </tr>
 </table>
 <!--HERO-->
-<table class="full-width-sm" align="center" cellpadding="0" cellspacing="0" role="presentation" width="600" bgcolor="#EAF6F6"  style="border-collapse: collapse; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; " >
+
+<!--  TITLE INTRO	-->
+<table class="full-width-sm" align="center" cellpadding="0" cellspacing="0" role="presentation" width="600" bgcolor="#FFFFFF"  style="border-collapse: collapse; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; ">
 <tr>
-<td>
-<table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" width="560" bgcolor="#EAF6F6"  style="border-collapse: collapse; border-top-left-radius: 10px; border-top-right-radius: 10px; " >
-
-
-
-</table>
-
-</td>	
-</tr>	
-</table>
-<table class="full-width-sm" align="center" cellpadding="0" cellspacing="0" role="presentation" width="600" bgcolor="#EAF6F6"  style="border-collapse: collapse; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; " >
+<td><table class="fullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse; ">
 <tr>
-<td>
-<table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" width="560" bgcolor="#FFFFFF"  style="border-collapse: collapse; border-radius:  10px; " >
-<tr>
-<td class="pt-sm-20"  style="line-height:1px; font-size:1px; padding-top:24px;">&nbsp;</td>
+<td class="pt-sm-30" style="line-height:1px; font-size:1px; padding-top:34px;">&nbsp;</td>
 </tr>
 <tr>
-<td class="px-sm-20 fz-22" style="font-family: 'Ambit', Arial, sans-serif; font-size: 24px; color:#1e3282; line-height: 1.4em;  text-align:center; font-weight:900; padding-top: 0px; mso-hyphenate: none; padding: 8px 120px 4px;">EXPLORE CROATIA ON A SMALL SHIP&nbsp;CRUISE</td>
+<td class="px-sm-20 fz-24" style="font-family: 'Ambit', Arial, sans-serif; font-size: 26px; color:#1e3282; line-height: 1.5em;  text-align:center; font-weight:900; mso-hyphenate: none; padding: 0 120px; text-transform: uppercase;">EXCLUSIVE PREVIEW OF OUR 2027 EUROPE&nbsp;TOURS</td>
 </tr>
 
-	
+
 <tr>
-<td  style="line-height:1px; font-size:1px; padding-top:16px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:18px;">&nbsp;</td>
 </tr>
 <tr>
-<td class="fz-17 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:normal; padding-top: 0px; mso-hyphenate: none; padding: 0 20px;">With early booking savings of 10% per person, now is the perfect time to book our Adriatic Coastal Explorer small ship cruise for 2027. Cruise the north Dalmatian coast and scenic Kornati archipelago aboard MV Amorena. Step ashore on mainland Croatia to visit the historic cities of Šibenik, Zadar, Trogir and Split, and explore the picturesque scenery of Krka National Park, famed for its numerous waterfalls.
+<td class="fz-17 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:normal; padding-top: 0px; mso-hyphenate: none; padding: 0 40px;"> 
+We are delighted to bring you an exclusive preview of some of our 2027 escorted tours in Europe. What will you experience next year? Perhaps explore the Italian lakes of Lake Orta and Lake Garda, spend a week on the shores of beautiful Lake Bled in Slovenia, go island hopping around the Greek islands, or enjoy a small ship cruise of the north Dalmatian coast and scenic Kornati archipelago aboard MV Amorena. 
 </td>
 </tr>
 <tr>
-<td  style="line-height:1px; font-size:1px; padding-top:16px;">&nbsp;</td>
-</tr>
-<tr>
-<td class="fz-17 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:700; padding-top: 0px; mso-hyphenate: none; padding: 0 20px;">Early booking offer for a limited time only – book&nbsp;now. 
-</td>
-</tr>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
 
-<tr>
-<td class="pt-sm-30"  style="line-height:1px; font-size:1px; padding-top:28px;">&nbsp;</td>
 </tr>
-<!-- CTA -->
 <tr>
-<td><table class="fullWidth" width="500" cellpadding="0" cellspacing="0" role="presentation" align="center" style="border-collapse: collapse;">
-<tr>
-<td class="px-sm-40" align="center" style="border-radius: 0px 0px 0px 0px;"><table class="fullWidth" width="230" bgcolor="#1e3282" cellpadding="0" cellspacing="0" role="presentation" align="center" style="border-collapse: collapse; border-radius: 6px;">
-<tr>
-<td  align="center" style="line-height: 100%; mso-padding-alt: 12px 40px 12px 40px;"><a class="px-sm-20" _label="MAIN_CTA" href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|MAIN_CTA" target="_blank" style="text-decoration: none; color: #fffffe; font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 40px 12px 40px; text-decoration: none;  color: #fffffe; font-weight:bold;" >Book now</a></td>
-</tr>
-</table></td>
+<td class="fz-17 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:400; padding: 0 40px; mso-hyphenate: none; "> 
+Early booking offer: Save 10% per person for a limited time only – use code <strong>SAVE27</strong> when booking.  
+</td>
 </tr>
 <tr>
 <td  style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
 </tr>
+<!-- CTA -->
+<tr>
+<td><table class="fullWidth" width="600" cellpadding="0" cellspacing="0" role="presentation" align="center" style="border-collapse: collapse;">
+<tr>
+<td class="px-sm-40" align="center" style="border-radius: 10px;"><table class="x70" width="230" bgcolor="#1e3282" cellpadding="0" cellspacing="0" role="presentation" align="center" style="border-collapse: collapse; border-radius: 6px;">
+<tr>
+<td  align="center" style="line-height: 100%; mso-padding-alt: 12px 6px 12px 6px;"><a class="px-sm-20" _label="MAIN_CTA" href="https://holiday.saga.co.uk/holidays/europe?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|MAIN_CTA" target="_blank" style="text-decoration: none; color: #fffffe; font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 40px 12px 40px; text-decoration: none;  color: #fffffe; font-weight:bold;" >Book now</a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td  style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+</tr>
 </table></td>
 </tr>
 <!-- CTA -->
+</table></td>
+</tr>
 </table>
 
-</td>	
-</tr>	
-</table>
-<!-- 1 COL POD -->
-<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" bgcolor="#EAF6F6">
-<!--SPACER-->
+<!-- 2 COL POD -->
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px 10px 0 0;" bgcolor="#EAF6F6">
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:30px; ">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
 </tr>
-<!--SPACER-->
 
 <!--POD START-->
 <tr>
-<td align="center" style="padding: 0px 0px 0px 0px;"><table class="fullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<td align="center" style="padding: 0px 0px 0px 0px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr> 
 
 <!-- POD1 -->
 <td valign="top" class="displayBlock fullWidth" width="560" align="center"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
 <tr>
-<td bgcolor="#EADFED" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<td bgcolor="#FFFFFF" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr>
 <td  align="left" style="padding: 20px 0px 20px 0px;  padding-left: 20px;"  ><table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
 <tr>
+<td bgcolor="#d6c0dc" width="16" style="border-radius: 5px 5px 5px 5px; "></td>
+<td style="padding-left: 8px; padding-right: 4px; vertical-align: top; font-family:'Ambit', arial, sans-serif;"><span class="fz-22" style="font-weight: 700; font-size: 22px; line-height: 1.2em;">SAVE 10%<br>
+<span style="font-weight: 400; font-size: 18px; line-height:1.4em;">off all 2027 departures</span><sup style="font-size: 12px; line-height: 0; font-weight: 400;">1</sup>
+</span></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
 
-<td class="heightAuto fz-20"  style="padding-left: 0px; padding-right: 0px; vertical-align: top; font-weight: 700; font-size: 19px; color: #1e3282">
-SAVE 10%<sup>#</sup></td>
-</tr>
-</table></td>
-</tr>
-</table></td>
-</tr>
-<tr>
-<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD1" target="_blank" _label="POD1"><img width="560" class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/f25e38d72bf562968f47e20fe164b7757a2a32354fd3b8cc02bd8787bdeac4f2.jpg" alt="" style=""></a></td>
-</tr>
-<tr>
-<td bgcolor="#FFFFFF" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"><table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
-<tr>
-<td  align="left" style="padding: 20px 8px 20px 0px;  padding-left: 20px;"  ><table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
-<tr>
-<!--ACCENT-->
-<td bgcolor="#d6c0dc" width="4" style="border-radius: 5px 5px 5px 5px; "></td>
-<!--ACCENT-->
-<!--POD CONTENT-->
-<td style="padding-left: 8px; padding-right: 0px; vertical-align: top;">
-<table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
-<tr>
-<td class="heightAuto" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:24px; font-weight:bold; text-align: left; color:#1e3282; padding-bottom:12px; padding-right:16px; vertical-align: top; mso-hyphenate:none;">
-Adriatic Coastal Explorer
-</td>
-</tr>
-<tr>
-<td style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: left; padding-top: 0px; padding-bottom:2px; mso-hyphenate: none; padding-right: 4px;">
-7 nights
-</td>
-</tr>
-<tr>
-<td style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:14px;  font-weight:400; text-align: left; padding-top: 0px;  mso-hyphenate: none; padding-right: 4px;">
-Departing XX X
-</td>
-</tr>
-</table>
 
-</td>	
-<!--POD CONTENT-->	
+<tr>
+<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD1" target="_blank" _label="POD1"><img width="560" class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/5608ebc58818b6b21422922a951004d4c05225f10b29ce1cdba48dfce776656c.jpg" alt="" style=""></a></td>
+</tr>
+<tr>
+<td class="px-sm-30 fz-20 heightAuto"  align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding-top:22px; padding-bottom:4px; padding-left: 30px; padding-right:30px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF" >Adriatic Coastal Explorer</td>
+</tr>
 
-</tr>
+
+<tr>
+<td class="px-sm-30"  align="center" style="padding: 10px 20px 20px 20px;" bgcolor="#FFFFFF" ><table class="fullWidth " align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="510" height="2" bgcolor="#d6c0dc" style="line-height: 2px; mso-line-height: exactly;"></th>
 </table></td>
 </tr>
-</table></td>
+<!-- PRICE END --> 
+
+<!--					1	-->
+<tr>
+<td class="pr-sm-10" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: left; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 30px; padding-right: 20px;" bgcolor="#FFFFFF">7 nights</td>
 </tr>
+
+
 
 <!--			CTA		-->
 <tr>
 <td class="px-sm-20"  align="left" style="padding: 0px 0px 20px 20px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
-<th width="190" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD7" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD1">Book now</a></th>
+<th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD1" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD1">Book now</a></th>
 </table></td>
 </tr>
 <!--			CTA		-->
@@ -813,338 +802,304 @@ Departing XX X
 </table></td>
 <!--POD1 END--> 
 
+
 </tr>
 </table></td>
 </tr>
 <!--POD END-->  
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
+</tr>
+
+<!--SPACER-->
+</table>
+<!-- 2 COL POD --> 	
+<!-- 2 COL POD -->
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 0;" bgcolor="#EAF6F6">
+
+<!--POD START-->
+<tr>
+<td align="center" style="padding: 0px 0px 0px 0px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<tr> 
+<!-- POD1 -->
+<td valign="top" class="displayBlock fullWidth" width="270" align="center">
+<table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
+<tr>
+<td bgcolor="#FFFFFF" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<tr>
+<td  align="left" style="padding: 20px 0px 20px 0px;  padding-left: 20px;"  ><table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<tr>
+<td bgcolor="#d6c0dc" width="16" style="border-radius: 5px 5px 5px 5px; "></td>
+<td style="padding-left: 8px; padding-right: 4px; vertical-align: top; font-family:'Ambit', arial, sans-serif;"><span class="fz-22" style="font-weight: 700; font-size: 22px; line-height: 1.2em;">SAVE 10%<br>
+<span style="font-weight: 400; font-size: 18px; line-height:1.4em;">off all 2027 departures</span><sup style="font-size: 12px; line-height: 0; font-weight: 400;">1</sup>
+</span></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/slovenia/scenic-lakes-of-slovenia?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" _label="POD3"><img width="270" class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/2a54763ea8a7c5db2b985f1cd3ac2ec72c90050fd78a9c103c437ecd0dd95069.jpg" alt="" style=""></a></td>
+</tr>
+<tr>
+<td height="48" class="px-sm-30 fz-20 heightAuto"  align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding-top:22px; padding-bottom:4px; padding-left: 30px; padding-right:12px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF" >Scenic Lakes of&nbsp;Slovenia</td>
+</tr>
+
+<tr>
+<td class="px-sm-30"  align="center" style="padding: 10px 20px 20px 20px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="210" height="2" bgcolor="#d6c0dc" style="line-height: 2px; mso-line-height: exactly;"></th>
+</table></td>
+</tr>
+
+<!-- PRICE END --> 
+
+<!--					1	-->
+<tr>
+<td class="pr-sm-10" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: left; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 30px; padding-right: 20px;" bgcolor="#FFFFFF">7 nights</td>
+</tr>
+
+<!--			CTA		-->
+<tr>
+<td class="px-sm-20"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/slovenia/scenic-lakes-of-slovenia?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD3" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD3">Book now</a></th>
+</table></td>
+</tr>
+<!--			CTA		-->
+
+</table></td>
+<!--POD1 END--> 
  
+
+<!-- SPACER -->
+<td class="displayBlock pt-sm-10" width="20" align="center">&nbsp;</td>
+
+<!-- POD1 -->
+<td valign="top" class="displayBlock fullWidth" width="270" align="center"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:30px; ">&nbsp;</td>
+<td bgcolor="#FFFFFF" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<tr>
+<td  align="left" style="padding: 20px 0px 20px 0px;  padding-left: 20px;"  ><table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<tr>
+<td bgcolor="#d6c0dc" width="16" style="border-radius: 5px 5px 5px 5px; "></td>
+<td style="padding-left: 8px; padding-right: 4px; vertical-align: top; font-family:'Ambit', arial, sans-serif;"><span class="fz-22" style="font-weight: 700; font-size: 22px; line-height: 1.2em;">SAVE 10%<br>
+<span style="font-weight: 400; font-size: 18px; line-height:1.4em;">off all 2027 departures</span><sup style="font-size: 12px; line-height: 0; font-weight: 400;">1</sup>
+</span></td>
 </tr>
-</table>
-<!-- 1 COL POD --> 	
-<!-- TIMELINE -->
-<!--TITLE-->
-<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" bgcolor="#EAF6F6">
-<tr>
-<td align="center">
-<table class="innerBlockFullWidth" width="560" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-radius: 10px 10px 0 0 ;">
-<tr>
-<td style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:24px; font-weight:bold; text-align: center; color:#1e3282; padding: 34px 20px 20px 20px; vertical-align: top; mso-hyphenate:none;">
-Highlights of Adriatic Coastal Explorer
-</td>
-</tr>	
-</table>
-</td>
+</table></td>
 </tr>
-</table>
-<!--TITLE-->
-<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" bgcolor="#EAF6F6">
-<!--CONTENT ROW1-->
+</table></td>
+</tr>
+
+
 <tr>
-<td align="center">
-<table class="innerBlockFullWidth" width="560" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-radius: 0;">
-<tr>
-<!--LEFT-->
-<td class="displayBlock" align="center" style="padding-top: 20px;">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td align="center">
-<a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|TIMELINE_IMAGE1" target="_blank" _label="TIMELINE_IMAGE1"><img width="240" class="innerBlockFullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/c98a3b19ee72abde0e8db1827097f205e18c208d977f332228f33017fc426b47.png" alt="" style=""></a>
-</td>
-</tr>	
-</table>
-</td>	
-<!--LEFT-->
-<!--RIGHT-->
-<td class="displayBlock" align="center">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td class="heightAuto pt-sm-30 fz-22" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding: 20px 20px 12px 20px; vertical-align: top; mso-hyphenate:none;">
-7 nights aboard MV&nbsp;Amorena
-</td>
+<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/scenic-lake-orta?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD2" target="_blank" _label="POD2"><img width="270" class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/0aec1341ea54f4fb3975a22eb0d1ea97bc793e66bfd8e5b5433d9bfa8eb8168c.jpg" alt="" style=""></a></td>
 </tr>
 <tr>
-<td style="padding:0 20px 16px 20px; font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:400;">
-Built in 2011, MV Amorena is the ideal size for small ship cruising with a maximum capacity is 32 passengers. Facilities include an open-plan restaurant, a bar area and Sun&nbsp;Deck. 
-</td>
-</tr>	
+<td  height="48"  class="px-sm-30 fz-20 heightAuto"  align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding-top:22px; padding-bottom:4px; padding-left: 30px; padding-right:30px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF" >Scenic Lake Orta</td>
+</tr>
+
+
+<tr>
+<td class="px-sm-30"  align="center" style="padding: 10px 20px 20px 20px;" bgcolor="#FFFFFF" ><table class="fullWidth " align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="210" height="2" bgcolor="#d6c0dc" style="line-height: 2px; mso-line-height: exactly;"></th>
+</table></td>
+</tr>
+<!-- PRICE END --> 
+
+<!--					1	-->
+<tr>
+<td class="pr-sm-10" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: left; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 30px; padding-right: 20px;" bgcolor="#FFFFFF">7 nights</td>
+</tr>
+
+
+
 <!--			CTA		-->
 <tr>
-<td class="px-sm-20"  align="left" style="padding: 0px 0px 20px 20px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
-<th width="190" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|TIMELINE_IMAGE1" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="TIMELINE_IMAGE1">Find out more</a></th>
+<td class="px-sm-20"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/scenic-lake-orta?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD2" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD2">Book now</a></th>
 </table></td>
 </tr>
 <!--			CTA		-->
-</table>
-</td>	
-<!--RIGHT-->
-</tr>	
-</table>	
-</td>	
-</tr>
-<!--CONTENT ROW1-->
-	
-<!--CONTENT ROW DASH-->
-<tr>
-<td align="center">
-<table class="innerBlockFullWidth" width="560" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-radius: 0px;">
-<tr>
-<!--LEFT-->
-<td class="displayBlock" align="center" style="padding: 0 0 24px;">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td align="center">
-<img width="280" class="innerBlockFullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8750db228a4676c404cd0b9465c5fff8c8144a6ba00702603e0bbd3143feb144.png" alt="" style="">
-</td>
-</tr>	
-</table>
-</td>	
-<!--LEFT-->
-<!--RIGHT-->
-<td class="displayBlock" align="center">
-<table class="fullWidth hide-sm" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td class="heightAuto pt-sm-20" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding: 20px 20px 16px 20px; vertical-align: top; mso-hyphenate:none;">
 
-</td>
+</table></td>
+<!--POD1 END-->
+</tr>
+</table></td>
+</tr>
+<!--POD END-->  
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
 </tr>
 
+<!--SPACER-->
 </table>
-</td>	
-<!--RIGHT-->
-</tr>	
-</table>	
-</td>	
+<!-- 2 COL POD --> 	
+<!-- 2 COL POD -->
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 0px;" bgcolor="#EAF6F6">
+
+
+<!--POD START-->
+<tr>
+<td align="center" style="padding: 0px 0px 0px 0px;"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<tr> 
+<!-- POD1 -->
+<td valign="top" class="displayBlock fullWidth" width="270" align="center"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
+<tr>
+<td bgcolor="#FFFFFF" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<tr>
+<td  align="left" style="padding: 20px 0px 20px 0px;  padding-left: 20px;"  ><table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<tr>
+<td bgcolor="#d6c0dc" width="16" style="border-radius: 5px 5px 5px 5px; "></td>
+<td style="padding-left: 8px; padding-right: 4px; vertical-align: top; font-family:'Ambit', arial, sans-serif;"><span class="fz-22" style="font-weight: 700; font-size: 22px; line-height: 1.2em;">SAVE 10%<br>
+<span style="font-weight: 400; font-size: 18px; line-height:1.4em;">off all 2027 departures</span><sup style="font-size: 12px; line-height: 0; font-weight: 400;">1</sup>
+</span></td>
 </tr>
-<!--CONTENT ROW DASH-->
-<!--CONTENT ROW2-->
+</table></td>
+</tr>
+</table></td>
+</tr>
+
+
 <tr>
-<td align="center">
-<table class="innerBlockFullWidth" width="560" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-radius: 0px;">
-<tr>
-<!--LEFT-->
-<td class="displayBlock" align="center" style="vertical-align: top;">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td align="center">
-<a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|TIMELINE_IMAGE2" target="_blank" _label="TIMELINE_IMAGE2"><img width="240" class="innerBlockFullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/828bbb94c4bfae5f9d3d2796036f9157baae8c010be0cac032db92d889555b6f.png" alt="" style=""></a>
-</td>
-</tr>	
-</table>
-</td>	
-<!--LEFT-->
-<!--RIGHT-->
-<td class="displayBlock" align="center">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td class="heightAuto pt-sm-30 fz-22" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding: 20px 20px 12px 20px; vertical-align: top; mso-hyphenate:none;">
-Discover charming towns and&nbsp;cities
-</td>
+<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/greece/greek-island-hopping-santorini-paros-naxos?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD5" target="_blank" _label="POD5"><img width="270" class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/e653e40b868fe56b5cfdfa1130b59b65fb16c794d473adc4654a475666b20229.jpg" alt="" style=""></a></td>
 </tr>
 <tr>
-<td style="padding:0 20px 16px 20px; font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:400;">
-This holiday includes guided tours of Šibenik with its elegant Renaissance buildings, historic Zadar, the city of Split, and beautiful Trogir with its wide seafront&nbsp;promenade. 
-</td>
-</tr>	
+<td  height="72"  class="px-sm-30 fz-20 heightAuto" align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding-top:22px; padding-bottom:4px; padding-left: 30px; padding-right:12px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF" >Greek Island Hopping: Santorini, Paros &amp; Naxos</td>
+</tr>
+
+
+<tr>
+<td class="px-sm-30"  align="center" style="padding: 10px 20px 20px 20px;" bgcolor="#FFFFFF" ><table class="fullWidth " align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="210" height="2" bgcolor="#d6c0dc" style="line-height: 2px; mso-line-height: exactly;"></th>
+</table></td>
+</tr>
+<!-- PRICE END --> 
+
+<!--					1	-->
+<tr>
+<td class="pr-sm-10" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: left; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 30px; padding-right: 20px;" bgcolor="#FFFFFF">14 nights</td>
+</tr>
+
+
+
 <!--			CTA		-->
 <tr>
-<td class="px-sm-20"  align="left" style="padding: 0px 0px 20px 20px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
-<th width="190" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|TIMELINE_IMAGE2" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="TIMELINE_IMAGE2">Find out more</a></th>
+<td class="px-sm-20"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/greece/greek-island-hopping-santorini-paros-naxos?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD5" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD5">Book now</a></th>
 </table></td>
 </tr>
 <!--			CTA		-->
-</table>
-</td>	
-<!--RIGHT-->
-</tr>	
-</table>	
-</td>	
-</tr>
-<!--CONTENT ROW2-->
-<!--CONTENT ROW DASH-->
-<tr>
-<td align="center">
-<table class="innerBlockFullWidth" width="560" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-radius: 0px;">
-<tr>
-<!--LEFT-->
-<td class="displayBlock" align="center" style="padding: 0 0 24px;">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td align="center">
-<img width="280" class="innerBlockFullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8750db228a4676c404cd0b9465c5fff8c8144a6ba00702603e0bbd3143feb144.png" alt="" style="">
-</td>
-</tr>	
-</table>
-</td>	
-<!--LEFT-->
-<!--RIGHT-->
-<td class="displayBlock" align="center">
-<table class="fullWidth hide-sm" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td class="heightAuto pt-sm-20" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding: 20px 20px 16px 20px; vertical-align: top; mso-hyphenate:none;">
 
-</td>
+</table></td>
+<!--POD1 END--> 
+
+
+<!-- SPACER -->
+<td class="displayBlock pt-sm-10" width="20" align="center">&nbsp;</td>
+
+
+<!-- POD1 -->
+<td valign="top" class="displayBlock fullWidth" width="270" align="center"><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;" class="innerBlockFullWidth">
+<tr>
+<td bgcolor="#FFFFFF" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
+<tr>
+<td  align="left" style="padding: 20px 0px 20px 0px;  padding-left: 20px;"  ><table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<tr>
+<td bgcolor="#d6c0dc" width="16" style="border-radius: 5px 5px 5px 5px; "></td>
+<td style="padding-left: 8px; padding-right: 4px; vertical-align: top; font-family:'Ambit', arial, sans-serif;"><span class="fz-22" style="font-weight: 700; font-size: 22px; line-height: 1.2em;">SAVE 10%<br>
+<span style="font-weight: 400; font-size: 18px; line-height:1.4em;">off all 2027 departures</span><sup style="font-size: 12px; line-height: 0; font-weight: 400;">1</sup>
+</span></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
 </tr>
 
-</table>
-</td>	
-<!--RIGHT-->
-</tr>	
-</table>	
-</td>	
-</tr>
-<!--CONTENT ROW DASH-->
-<!--CONTENT ROW2-->
+
 <tr>
-<td align="center">
-<table class="innerBlockFullWidth" width="560" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-radius: 0px;">
-<tr>
-<!--LEFT-->
-<td class="displayBlock" align="center" style="vertical-align: top;">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td align="center">
-<a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|TIMELINE_IMAGE2" target="_blank" _label="TIMELINE_IMAGE2"><img width="240" class="innerBlockFullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/d9eca25886ff1207f52d6147e380bb9c60be31435d976be4c7b07b82e8ed2f7e.png" alt="" style=""></a>
-</td>
-</tr>	
-</table>
-</td>	
-<!--LEFT-->
-<!--RIGHT-->
-<td class="displayBlock" align="center">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td class="heightAuto pt-sm-30 fz-22" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding: 20px 20px 12px 20px; vertical-align: top; mso-hyphenate:none;">
-Explore Kirka National&nbsp;Park
-</td>
+<td align="center"><a href="https://holiday.saga.co.uk/holidays/europe/italy/the-southern-shores-of-lake-garda?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD4" target="_blank" _label="POD4"><img width="270" class="fullWidth" src="https://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/098b5d07eb2ba5a5e7a63d8cd7258d05b548f25767cfe54ddfe8a4003dc4d3c4.jpg" alt="" style=""></a></td>
 </tr>
 <tr>
-<td style="padding:0 20px 16px 20px; font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:400;">
-Visit Krka National Park, one of eight national parks in Croatia and home to the famous Krka waterfalls, comprising seven cascading waterfalls and emerald-green lakes.
-</td>
-</tr>	
+<td  height="72"  class="px-sm-30 fz-20 heightAuto"  align="center" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding-top:22px; padding-bottom:4px; padding-left: 30px; padding-right:20px; vertical-align: top; mso-hyphenate:none;" bgcolor="#FFFFFF" >The Southern Shores of Lake Garda</td>
+</tr>
+
+
+<tr>
+<td class="px-sm-30"  align="center" style="padding: 10px 20px 20px 20px;" bgcolor="#FFFFFF" ><table class="fullWidth " align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="210" height="2" bgcolor="#d6c0dc" style="line-height: 2px; mso-line-height: exactly;"></th>
+</table></td>
+</tr>
+<!-- PRICE END --> 
+
+<!--					1	-->
+<tr>
+<td class="pr-sm-10" align="center" style="font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:700; text-align: left; padding-top: 0px; padding-bottom:24px; mso-hyphenate: none; padding-left: 30px; padding-right: 20px;" bgcolor="#FFFFFF">7 nights</td>
+</tr>
+
+
+
 <!--			CTA		-->
 <tr>
-<td class="px-sm-20"  align="left" style="padding: 0px 0px 20px 20px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
-<th width="190" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|TIMELINE_IMAGE2" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="TIMELINE_IMAGE2">Find out more</a></th>
+<td class="px-sm-20"  align="center" style="padding: 0px 0px 20px 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
+<th width="230" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/italy/the-southern-shores-of-lake-garda?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|POD4" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="POD4">Book now</a></th>
 </table></td>
 </tr>
 <!--			CTA		-->
-</table>
-</td>	
-<!--RIGHT-->
-</tr>	
-</table>	
-</td>	
-</tr>
-<!--CONTENT ROW2-->
-<!--CONTENT ROW DASH-->
-<tr>
-<td align="center">
-<table class="innerBlockFullWidth" width="560" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-radius: 0px;">
-<tr>
-<!--LEFT-->
-<td class="displayBlock" align="center" style="padding: 0 0 24px;">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td align="center">
-<img width="280" class="innerBlockFullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8750db228a4676c404cd0b9465c5fff8c8144a6ba00702603e0bbd3143feb144.png" alt="" style="">
-</td>
-</tr>	
-</table>
-</td>	
-<!--LEFT-->
-<!--RIGHT-->
-<td class="displayBlock" align="center">
-<table class="fullWidth hide-sm" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td class="heightAuto pt-sm-20" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding: 20px 20px 16px 20px; vertical-align: top; mso-hyphenate:none;">
 
-</td>
+</table></td>
+<!--POD1 END--> 
 </tr>
-
-</table>
-</td>	
-<!--RIGHT-->
-</tr>	
-</table>	
-</td>	
-</tr>
-<!--CONTENT ROW DASH-->
-<!--CONTENT ROW2-->
-<tr>
-<td align="center">
-<table class="innerBlockFullWidth" width="560" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-radius: 0px;">
-<tr>
-<!--LEFT-->
-<td class="displayBlock" align="center" style="vertical-align: top;">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td align="center">
-<a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|TIMELINE_IMAGE2" target="_blank" _label="TIMELINE_IMAGE2"><img width="240" class="innerBlockFullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/f8ed6c27be4597bdb71aa3d459e214f9994e76079a24b3ed47b574cf373f673d.png" alt="" style=""></a>
-</td>
-</tr>	
-</table>
-</td>	
-<!--LEFT-->
-<!--RIGHT-->
-<td class="displayBlock" align="center">
-<table class="fullWidth" width="280" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-<tr>
-<td class="heightAuto pt-sm-30 fz-22" style="font-family:'Ambit', arial, sans-serif; line-height:1.2em; font-size:20px; font-weight:bold; text-align: left; color:#1e3282; padding: 20px 20px 12px 20px; vertical-align: top; mso-hyphenate:none;">
-Cruise through the Kornati Islands
-</td>
-</tr>
-<tr>
-<td style="padding:0 20px 16px 20px; font-family:'Ambit', arial, sans-serif; line-height: 1.3em; font-size:17px;  font-weight:400;">Cruise through the Kornati Islands, an archipelago of over 140 uninhabited islands and islets featuring caves and&nbsp;grottoes.
-</td>
-</tr>	
-<!--			CTA		-->
-<tr>
-<td class="px-sm-20"  align="left" style="padding: 0px 0px 20px 20px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" bgcolor="#FFFFFF" ><table class="fullWidth" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;" >
-<th width="190" bgcolor="#1e3282" style="border-radius: 5px 5px 5px 5px; line-height: 100%; mso-padding-alt: 12px 20px 12px 20px;"> <a href="https://holiday.saga.co.uk/holidays/europe/croatia/adriatic-coastal-explorer?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|TIMELINE_IMAGE2" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; display: block; font-size: 18px; line-height: 14pt; mso-line-height: exactly; padding: 12px 6px 12px 6px; text-decoration: none;  color: #fffffe; font-weight:bold;" _label="TIMELINE_IMAGE2">Find out more</a></th>
 </table></td>
 </tr>
-<!--			CTA		-->
-</table>
-</td>	
-<!--RIGHT-->
-</tr>	
-</table>	
-</td>	
-</tr>
-<!--CONTENT ROW2-->
-
-
-
-</table>
-<!-- TIMELINE --> 	
-<table class="full-width-sm" align="center" cellpadding="0" cellspacing="0" role="presentation" width="600" bgcolor="#EAF6F6"  style="border-collapse: collapse; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; " >
+<!--POD END-->  
 <tr>
+<td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
+</tr>
+
+<!--SPACER-->
+</table>
+<!-- 2 COL POD --> 	
+	<!-- SPACER Start -->
+<table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
+<tr>
+<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+</tr>
+</table>
+<!-- SPACER END -->
+
+<!-- OFFER BANNER -->
+<table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="full-width-sm" >
+<tr>
+<!--[if !mso]><!-->
 <td>
-<table class="innerBlockFullWidth" align="center" cellpadding="0" cellspacing="0" role="presentation" width="560" bgcolor="#FFFFFF"  style="border-collapse: collapse; border-radius: 0 0 10px 10px; " >
-<tr>
-<td class="pt-sm-0" style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
+<!-- Desktop Image -->
+<a href="https://holiday.saga.co.uk/holidays/europe/uk/andre-rieu-and-the-beatles-story?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|FLASH_SALE_BANNER" target="_blank" _label="FLASH_SALE_BANNER">
+<img class="desktop-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/dc18d9f81aabde6962695a4e00e8d9dd102422dcea485d0276534d085310382a.jpg" alt="SAVE UP TO £2,000pp ON SELECTED TOURS. FOR A LIMITED TIME ONLY." border="0" style="border-radius: 10px; display: block;">
+</a>
+<!-- Mobile Image -->
+<a href="https://holiday.saga.co.uk/holidays/europe/uk/andre-rieu-and-the-beatles-story?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|FLASH_SALE_BANNER" target="_blank" _label="FLASH_SALE_BANNER">
+<img class="mobile-image" align="center" width="100%" height="100%"  src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/a5f59724251c2cb65943035437f31e178141abb0da1f94bed427d9de032f9ec4.jpg" alt="SAVE UP TO £2,000pp ON SELECTED TOURS. FOR A LIMITED TIME ONLY." border="0" style="border-radius: 10px; display: none;">
+</a>
+</td>
+<!--<![endif]-->
+<!--[if mso]>
+<td>
+<a href="https://holiday.saga.co.uk/holidays/europe/uk/andre-rieu-and-the-beatles-story?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|FLASH_SALE_BANNER" target="_blank" _label="FLASH_SALE_BANNER">
+<img class="bnr-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/dc18d9f81aabde6962695a4e00e8d9dd102422dcea485d0276534d085310382a.jpg" alt="SAVE UP TO £2,000pp ON SELECTED TOURS. FOR A LIMITED TIME ONLY." border="0" class="fullWidth heightAuto" style="border-radius: 10px;">
+</a>
+</td>
+<![endif]-->
 </tr>
-
 </table>
-
-</td>	
-</tr>	
-<tr>
-<td style="line-height:1px; font-size:1px; padding-top:30px; ">&nbsp;</td>
-</tr>
-</table>
-<!-- TIMELINE -->
-		
+<!-- OFFER BANNER -->
 <!-- SPACER Start -->
 <table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
 </tr>
 </table>
-<!-- SPACER END --> 
+<!-- SPACER END -->
+
 <!-- OFFER BANNER -->
 <table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="full-width-sm" >
 <tr>
@@ -1173,10 +1128,11 @@ Cruise through the Kornati Islands
 <!-- SPACER Start -->
 <table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:40px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:30px;">&nbsp;</td>
 </tr>
 </table>
-<!-- SPACER END --> 
+<!-- SPACER END -->
+	
 
 <!-- MARBLE -->
 <table class="full-width-sm" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse; ">
@@ -1219,14 +1175,14 @@ Cruise through the Kornati Islands
 <td  style="line-height:1px; font-size:1px; padding-top:12px;">&nbsp;</td>
 </tr>
 <tr>
-<td class="fz-22 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 24px; color:#1e3282; line-height: 1.5em;  text-align:center; font-weight:700; padding-top: 0px; mso-hyphenate: none; padding-left: 20px; padding-right: 20px; padding-bottom: 0px;"><a class="fz-22 px-sm-20" href="tel:08082232729" style="color:#1e3282; font-weight: 700; font-size: 24px; color:#1e3282; line-height: 1.5em;">0808&nbsp;223&nbsp;2729</a>
+<td class="fz-22 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 24px; color:#1e3282; line-height: 1.5em;  text-align:center; font-weight:700; padding-top: 0px; mso-hyphenate: none; padding-left: 20px; padding-right: 20px; padding-bottom: 0px;"><a class="fz-22 px-sm-20" href="tel:08082587744" style="color:#1e3282; font-weight: 700; font-size: 24px; color:#1e3282; line-height: 1.5em;">0808&nbsp;258&nbsp;7744</a>
 </td>
 </tr>
 <tr>
 <td  style="line-height:1px; font-size:1px; padding-top:12px;">&nbsp;</td>
 </tr>
 <tr>
-<td class="fz-17 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:normal; padding-top: 0px; mso-hyphenate: none; padding-left: 40px; padding-right: 40px; padding-bottom: 0px;">They will guide you through the booking process over the phone.
+<td class="fz-17 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:normal; padding-top: 0px; mso-hyphenate: none; padding-left: 40px; padding-right: 40px; padding-bottom: 0px;">They will guide you through the booking process over the&nbsp;phone.
 </td>
 </tr>
 <tr>
@@ -1250,6 +1206,7 @@ Cruise through the Kornati Islands
 <td class="fz-17 px-sm-20" style="font-family: 'Ambit', Arial, sans-serif; font-size: 17px; line-height: 1.5em;  text-align:center; font-weight:normal; padding-top: 0px; mso-hyphenate: none; padding-left: 20px; padding-right: 20px; padding-bottom: 0px;">9&zwj;a&zwj;m‑5&zwj;p&zwj;m S&zwj;a&zwj;t&zwj;u&zwj;r&zwj;d&zwj;a&zwj;y
 </td>
 </tr>
+
 <tr>
 <td  style="line-height:1px; font-size:1px; padding-top:34px;">&nbsp;</td>
 </tr>
@@ -1303,7 +1260,7 @@ YOU TO THE WHOLE FAMILY</td>
 <td align="center"><table class="container" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#E5F3F3" width="550" style="border-collapse: collapse;">
 <tr>
 
-<td  width="550" class="fullWidth"><img class="innerBlockFullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/944f43541122a4e13668925e1a5ef87648234e7c0d889dff2e683ddedc36658a.jpg" alt="" width="550" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></td>
+<td align="center" width="550" class="fullWidth"><img class="innerBlockFullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/944f43541122a4e13668925e1a5ef87648234e7c0d889dff2e683ddedc36658a.jpg" alt="" width="550" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;" ></td>
 
 </tr>
 </table></td>
@@ -1325,7 +1282,7 @@ YOU TO THE WHOLE FAMILY</td>
 <tr>
 <td style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 28px; mso-line-height: exactly; text-align:center; font-weight:bold;;"><a href="https://travel.saga.co.uk/cruises?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|Cruise|text" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 24px; text-decoration: none; color: #1e3282; font-weight: normal;">Cruise</a> &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;|&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; <a href="https://holiday.saga.co.uk/?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|Holidays|text" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 24px; text-decoration: none; color: #1e3282; font-weight: normal;">Holidays</a> 
 &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;|&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-<a href="https://www.saga.co.uk/insurance?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|Insurance|text" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 24px; text-decoration: none; color: #1e3282; font-weight: normal;">Insurance</a> &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;|&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; <a href="https://www.saga.co.uk/magazine?icid=ghp|quicklinks|group|magazine|magazine?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|Magazine|text" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 24px; text-decoration: none; color: #1e3282; font-weight: normal;">Magazine</a> &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;|&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; <a href="https://www.saga.co.uk/money?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|Money|text" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 24px; text-decoration: none; color: #1e3282; font-weight: normal;">Money</a></td>
+<a href="https://www.saga.co.uk/insurance?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|Insurance|text" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 24px; text-decoration: none; color: #1e3282; font-weight: normal;">Insurance</a> &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;|&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; <a href="https://www.saga.co.uk/magazine?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|Magazine|group_banner" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 24px; text-decoration: none; color: #1e3282; font-weight: normal;">Magazine</a> &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;|&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; <a href="https://www.saga.co.uk/money?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|Money|text" target="_blank" style="font-family: 'Ambit', Arial, sans-serif; font-size: 18px; line-height: 24px; text-decoration: none; color: #1e3282; font-weight: normal;">Money</a></td>
 </tr>
 </table>
 </div>
@@ -1353,7 +1310,8 @@ YOU TO THE WHOLE FAMILY</td>
 </tr>
 
 </table>
-<!-- body text end --> 	
+<!-- body text end --> 
+
 <!-- MARBLE -->
 <table class="full-width-sm" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse; ">
 <tr>
@@ -1407,7 +1365,7 @@ YOU TO THE WHOLE FAMILY</td>
 <!--CONTACT-->
 <td class="fullWidth displayBlock" align="center" width="40%"><table cellpadding="0" cellspacing="0" role="presentation"  style="border-collapse: collapse;">
 <tr>
-<td align="center" style="font-family: 'Ambit', arial, sans-serif; font-size:18px; text-align:center; line-height:38px; mso-line-height-rule: exactly; font-weight:bold; color:#ffffff;"><a href="tel:08082232729" _label="CHAT_WITH_US" target="_blank"><img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/29526f1acc30e4b1f7a6b772d63446118a1d79020e379c52d8b388641be4fc8c.png" alt="" width="25" height="25" style="display:inline-block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif;"></a> &nbsp;&nbsp;<a href="tel:08082232729" _label="CHAT_WITH_US" target="_blank"><span style="font-family: 'Ambit', arial, sans-serif; font-size:18px; text-align:center; line-height:38px; mso-line-height-rule: exactly; font-weight:bold; color:#ffffff; vertical-align: middle;">0808&nbsp;223&nbsp;2729</span></a></td>
+<td align="center" style="font-family: 'Ambit', arial, sans-serif; font-size:18px; text-align:center; line-height:38px; mso-line-height-rule: exactly; font-weight:bold; color:#ffffff;"><a href="tel:08082587744" _label="CHAT_WITH_US" target="_blank"><img src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/29526f1acc30e4b1f7a6b772d63446118a1d79020e379c52d8b388641be4fc8c.png" alt="" width="25" height="25" style="display:inline-block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif;"></a> &nbsp;&nbsp;<a href="tel:08082587744" _label="CHAT_WITH_US" target="_blank"><span style="font-family: 'Ambit', arial, sans-serif; font-size:18px; text-align:center; line-height:38px; mso-line-height-rule: exactly; font-weight:bold; color:#ffffff; vertical-align: middle;">0808&nbsp;258&nbsp;7744</span></a></td>
 </tr>
 </table></td>
 <!--CONTACT--> 
@@ -1443,7 +1401,7 @@ YOU TO THE WHOLE FAMILY</td>
 <td  align="center" style="font-family: 'Ambit', arial, sans-serif; font-size:14px; line-height:1.2em;  text-align:center; font-weight:400; color:#FFFFFF; padding-left: 20px; padding-right:20px;" >Update your contact preferences or unsubscribe <% if (message.segmentCode.indexOf('_EmailOnly') != -1) { %>
 <%@ include view='TR_Holiday_Unsub_Bottom_EIE_NEW_FOOTER' %>
 <% } else { %>
-<%@ include view='TR_Hosted_Hotels_Unsub_Bottom_EIE_NEW_FOOTER' %>
+<%@ include view='TR_Escorted_Touring_Unsub_Bottom_EIE_NEW_FOOTER' %>
 <% } %>
 </td>
 </tr>
@@ -1455,17 +1413,9 @@ YOU TO THE WHOLE FAMILY</td>
 </table>
 <!--UNSUB--> 
 <!-- BTA AWARDS -->
-<table class="full-width-sm" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse;">
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation"  style="border-collapse: collapse;">
 <tr>
-<td  align="center"><table cellpadding="0" cellspacing="0" role="presentation" bgcolor="" width="100%" style="border-collapse: collapse;">
-<tr>
-<th align="center" style="font-size:1px; line-height: 1px; vertical-align:top;"><table  cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
-<tr>
-<td class="fullWidth" align="center"><img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8859fb1d0a6166c54e098e16f45aa00f785a6914bb96f7206efcad2be68a0b60.png" alt="" width="500" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5;text-align:center; border-radius: 10px;" ></td>
-</tr>
-</table></th>
-</tr>
-</table></td>
+<td width="100%" align="center"><img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/8859fb1d0a6166c54e098e16f45aa00f785a6914bb96f7206efcad2be68a0b60.png" alt="" width="500" height="auto" ></td>
 </tr>
 </table>
 <!-- BTA AWARDS -->
@@ -1473,9 +1423,10 @@ YOU TO THE WHOLE FAMILY</td>
 <table class="full-width-sm" align="center" width="600" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <!-- SPACER -->
 <tr>
-<td style="line-height:1px; font-size:1px; padding-top:0px;">&nbsp;</td>
+<td style="line-height:1px; font-size:1px; padding-top:20px;">&nbsp;</td>
 </tr>
 <!-- SPACER --> 
+
 <!-- TITLE -->
 <tr>
 <td style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 24px;">Terms and conditions</td>
@@ -1484,10 +1435,8 @@ YOU TO THE WHOLE FAMILY</td>
 <!-- ADOBE BLOCK T&Cs -->
 <tr>
 <td style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px;">
-# Early booking offer ends Friday July XX, 2026: Valid on new bookings only, cannot be retrospectively applied to existing bookings. Discount cannot be used in conjunction with any other offer. Discount applies to the price excluding insurance. 10% discount available on all 2027 Europe escorted tours. Please quote SAVE27 when booking. Offer is for a limited time only. Saga reserves the right to withdraw, extend or reduce offers at any given time. It’s always best to book early because holidays can sell out fast and prices sometimes increase. 
+1 Special offer: Valid on new bookings only, cannot be retrospectively applied. Discount cannot be used in conjunction with any other offer and is for a limited time only. Saga reserves the right to withdraw, extend or reduce offers at any given time. It is always best to book early because holidays can sell out fast and prices sometimes increase.
 <br><br>
-
-
 <%@ include view='TR_Holidays_Marketing_Footer_Wording' %></td>
 </tr>
 <!-- SPACER -->
@@ -1499,7 +1448,7 @@ YOU TO THE WHOLE FAMILY</td>
 <td><table width="100%" class="fullWidth" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;">
 <tr>
 <td width="30%" align="left" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;"><%@ include view='TR_Footer_Links_EIE' %></td>
-<td width="30%" align="right" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;"> Ⓒ <%= formatDate(new Date(), "%4Y") %> Saga<br>0&zwj;2&zwj;0&zwj;3&zwj;5&zwj;2 </td>
+<td width="30%" align="right" style="color:#2a2a2a; font-family: 'Ambit',  Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; vertical-align: top;"> Ⓒ <%= formatDate(new Date(), "%4Y") %> Saga<br>HAE-000622</td>
 </tr>
 </table></td>
 </tr>
