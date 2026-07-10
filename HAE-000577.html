@@ -1014,7 +1014,7 @@ Departing October 2026 &amp; March, October 2027
 </table>
 <!-- SPACER END -->
 <!-- FEATURE POD --> 
-<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px 10px 0 0 ;" bgcolor="#EAF6F6">
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px;" bgcolor="#EAF6F6">
 
 <tr>
 <td style="line-height:1px; font-size:1px; padding-top:28px; ">&nbsp;</td>
@@ -1109,7 +1109,7 @@ Join a dedicated solos host and enjoy three included excursions on departures re
 </table>
 <!-- SPACER END -->
 <!-- FEATURE POD --> 
-<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px 10px 0 0 ;" bgcolor="#EAF6F6">
+<table class="full-width-sm" width="600" align="center" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse; border-radius: 10px;" bgcolor="#EAF6F6">
 
 <tr>
 <td style="line-height:1px; font-size:1px; padding-top:24px; ">&nbsp;</td>
@@ -1245,6 +1245,7 @@ This 4-star hotel is set near a vast nature reserve crisscrossed with walking an
 </tr>
 </table>
 <!-- SPACER END -->
+
 <!-- OFFER BANNER -->
 <table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="full-width-sm" >
 <tr>
@@ -1277,13 +1278,31 @@ This 4-star hotel is set near a vast nature reserve crisscrossed with walking an
 </tr>
 </table>
 <!-- SPACER END -->
-<!-- BROCHURE -->
-<table class="full-width-sm" align="center"  cellpadding="0" cellspacing="0" role="presentation" width="600" style="border-collapse: collapse; ">
+<!-- OFFER BANNER -->
+<table role="presentation" width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="full-width-sm" >
 <tr>
-<td class="fullWidth" align="center"><a href="https://holiday.saga.co.uk/brochures?pid=<%= delivery.link3 %>&ctiq=<%= recipient.cti_id %>&persid=<%= recipient.pers_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|BROCHURE" target="_blank" _label="BROCHURE"> <img class="fullWidth" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/bf10cab70b654528906c2d5fd1ead319d749e44513ec709f5360bed011fde3e8.jpg" alt="ORDER A BROCHURE" width="600" height="auto"  style="display:block; height:auto; outline:none; border:0; text-decoration:none; font-family: sans-serif; font-size:20px; line-height:1.5; color:blue; text-align:center; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-radius: 10px;" ></a></td>
+<!--[if !mso]><!-->
+<td>
+<!-- Desktop Image -->
+<a href="https://holiday.saga.co.uk/holidays/europe/uk/andre-rieu-and-the-beatles-story?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|FLASH_SALE_BANNER" target="_blank" _label="FLASH_SALE_BANNER">
+<img class="desktop-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/59081435e67664db4e731c5225d989e8201cade716d0a5438597e47c8d2234a8.jpg" alt="ANDRE RIEU AND THE BEATLES STORY. NEW DATE RELEASED." border="0" style="border-radius: 10px; display: block;">
+</a>
+<!-- Mobile Image -->
+<a href="https://holiday.saga.co.uk/holidays/europe/uk/andre-rieu-and-the-beatles-story?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|FLASH_SALE_BANNER" target="_blank" _label="FLASH_SALE_BANNER">
+<img class="mobile-image" align="center" width="100%" height="100%"  src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/a5f59724251c2cb65943035437f31e178141abb0da1f94bed427d9de032f9ec4.jpg" alt="ANDRE RIEU AND THE BEATLES STORY. NEW DATE RELEASED" border="0" style="border-radius: 10px; display: none;">
+</a>
+</td>
+<!--<![endif]-->
+<!--[if mso]>
+<td>
+<a href="https://holiday.saga.co.uk/holidays/europe/uk/andre-rieu-and-the-beatles-story?pid=<%= delivery.deliveryCode %>&ctiq=<%= recipient.cti_id %>&ecti=<%= recipient.encrypted_CTI_Id %>&scid=<%= delivery.channel %>|<%= delivery.division %>|<%= delivery.product %>|<%= delivery.sagaCampaignName %>|<%= delivery.link1 %>|<%= delivery.link2 %>|<%= formatDate(new Date(), '%4Y') %><%= formatDate(new Date(), '%2M') %><%= formatDate(new Date(), '%2D') %>|FLASH_SALE_BANNER" target="_blank" _label="FLASH_SALE_BANNER">
+<img class="bnr-image" align="center" width="600" height="auto" src="http://res1.email3.saga.co.uk/res/sagagro_mkt_prod1/59081435e67664db4e731c5225d989e8201cade716d0a5438597e47c8d2234a8.jpg" alt="ANDRE RIEU AND THE BEATLES STORY. NEW DATE RELEASED" border="0" class="fullWidth heightAuto" style="border-radius: 10px;">
+</a>
+</td>
+<![endif]-->
 </tr>
 </table>
-<!-- BROCHURE --> 
+<!-- OFFER BANNER -->
 <!-- SPACER Start -->
 <table class="full-width-sm" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse;">
 <tr>
